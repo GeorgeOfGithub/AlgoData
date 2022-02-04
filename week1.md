@@ -14,7 +14,11 @@ Man halverer for hver duel og dette gøres indtil man har en tilbage og derfor e
 ## 6.2
 Man gør det samme som 6.1, men så gør man det samme igen bare for taberne og kæmper dem mod hinanden
 
+
 ## 6.3
 Man sætter dem der har tabt mod den stærkeste mod hinanden og det antal er log base 2 af n og -1
 n-1+log2(n)-1
+
+## 7
+tiden vil altid være 100 sekunder
 
