@@ -36,7 +36,7 @@ Den skal sorteres og dernæst kører man igennem array og kigger på naboer
 Den skal sorteres og dernæst kører man igennem array og kigger fra begge ender og ser hvad der sker når de lægges sammen
 
 ## 5.2
-Splitter array op og kigger på midter og ser om det passer
+Sorterer først og leder derefter med binary search. det tager 2*n log(n)
 
 ## 5.3
 
