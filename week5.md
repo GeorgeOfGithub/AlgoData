@@ -34,7 +34,7 @@ we go 2 places forward with x.next, so one link is basically removed.
 t is added as the next element in the array.
 
 ## 4.3
-now t is added after x, but t.next is t again and therefore it doesnt work
+now t is added after x, but t.next is t again and therefore it doesnt work, because t.next points to itself.
 
 ## 6.1
 We go through each entity in the linked list and see if x is lower than the number and x.next is higher or equal to the number and if that is true then we say x.next is the new number and x.next.next is equal to the earlier x.next
@@ -54,6 +54,7 @@ Yes, if every prisoner flicks a switch when they come into the room and the last
 
 ## 8.2
 It is like if it is bits instead. so we go from 0 to 32 in binary and when every switch is flicked on we are at 32.  If a prisoner goes in twice he doesnt do anything.
+2^5 = 32
 
 ## 8.3
 Only one prisoner can turn on the light. Prisoners can only turn off the light once. So when a prisoner comes in twice he just leaves the light. when the turn on prisoner has turned on the light 32 times he knows every prisoner has been in there.
