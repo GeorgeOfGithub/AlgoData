@@ -10,7 +10,8 @@ public class Stack {
         int[] array = new int[length];
 
         for (int i=0; i<=length; i++) {
-            input scanner.nextLine();
+            input = scanner.nextLine();
+            System.out.println(input);
         }
         
     }
