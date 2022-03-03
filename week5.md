@@ -45,16 +45,18 @@ If you are allowed to do x.next.next.next... until you are halfway through the n
 
 
 ## 7
-
+So we have x.current and then we change x.prev and x.next around.
+https://www.geeksforgeeks.org/reverse-a-linked-list/ 
 
 
 ## 8.1
-
+Yes, if every prisoner flicks a switch when they come into the room and the last prisoner can then see that every switch except one is flicked and therefore every prisoner has been in there. If a prisoner goes in twice he doesnt do anything.
 
 ## 8.2
-
+It is like if it is bits instead. so we go from 0 to 32 in binary and when every switch is flicked on we are at 32.  If a prisoner goes in twice he doesnt do anything.
 
 ## 8.3
+Only one prisoner can turn on the light. Prisoners can only turn off the light once. So when a prisoner comes in twice he just leaves the light. when the turn on prisoner has turned on the light 32 times he knows every prisoner has been in there.
 
 
 ## 9.1
