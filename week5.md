@@ -60,7 +60,7 @@ Only one prisoner can turn on the light. Prisoners can only turn off the light o
 
 
 ## 9.1
-
+We create a new array from the last array and then put every part of the array except the the last or first one. 
 
 ## 9.2
 
