@@ -7,7 +7,7 @@ Just push them all
 add 4, then add 1, then 3, then remove 4, then add 8, then remove 1
 
 ## 1.4
-
+you make 2 stacks. when you want to dequeue from the stack you first pop everything from the first stack and add it in opposite order to the other stack. Now when you pop you remove it first to last instead of last to first. this is done until it is empty and then it is repeated every time you want to dequeue.
 
 ## 2
 number c
@@ -34,7 +34,7 @@ we go 2 places forward with x.next, so one link is basically removed.
 t is added as the next element in the array.
 
 ## 4.3
-now t is added between the next of x, with x.next comming right after.
+now t is added after x, but t.next is t again and therefore it doesnt work
 
 
 ## 6.1

@@ -1,13 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Stack {
+public class Queue {
 
     public static ArrayList<Integer> array = new ArrayList<Integer>();
-    static int current = -1;
-
-
-    static int[] arr;
 
     public static void main(String[] args) {
 
@@ -15,32 +11,27 @@ public class Stack {
         String input = null;
         Scanner scanner= new Scanner(System.in);
         int length = scanner.nextInt();
-        arr = new int[length];
-
-
 
         input = scanner.nextLine();
         for (int i=1; i<=length; i++) {
             input = scanner.next();
-            if (input.equals("PU")) {
+            if (input.equals("E")) {
                 number = scanner.nextInt();
-                Push(number);
+                Enqueue(number);
             } else {
-                Pop();
+                Dequeue();
             }
         }
 
         scanner.close();
     }
     
-    public static void Push(int n) {
+    public static void Enqueue(int n) {
         array.add(n);
-        current++;
     }
 
-    public static void Pop() {
-        System.out.println(array.get(current));
-        array.remove(current);
-        current--;
+    public static void Dequeue() {
+        System.out.println(array.get(0));
+        array.remove(0);
     }
 }
