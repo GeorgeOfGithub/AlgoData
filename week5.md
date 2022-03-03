@@ -13,17 +13,17 @@ you make 2 stacks. when you want to dequeue from the stack you first pop everyth
 number c
 
 ## 3.1
-first c is 0, then we go to the next link and add +1 to c, so c is 1. Then the next link and c is 2 and then the next link so c is 3. Finally last link and c is 4 and x is now null.
+first c is 0, then we go to the next link and add +1 to c, so c is 1. Then the next link and c is 2 and then the next link so c is 3. Then we go to the next last one and c is 4. Finally last link and c is 5 and x is now null.
 
 ## 3.2
-Foo computes the number of links minus 1.
+Foo computes the number of links.
 
 
 ## 3.3
-first x is 0 and s i added by 7. Then we go to the next link and s is +42 so it is 49. next link and s is +18 and therefore 67. next is 23 and therefore 90. then x is null and therefore we skip 5. and s is therefore 90.
+first x is 0 and s i added by 7. Then we go to the next link and s is +42 so it is 49. next link and s is +18 and therefore 67. next is 23 and therefore 90. then 95 and now the x is x.next, which is null and we end.
 
 ## 3.4
-bar adds all links together except the last one.
+bar adds all links together.
 
 
 ## 4.1
@@ -36,10 +36,31 @@ t is added as the next element in the array.
 ## 4.3
 now t is added after x, but t.next is t again and therefore it doesnt work
 
-
 ## 6.1
+We go through each entity in the linked list and see if x is lower than the number and x.next is higher or equal to the number and if that is true then we say x.next is the new number and x.next.next is equal to the earlier x.next
+
+## 6.2
+If you are allowed to do x.next.next.next... until you are halfway through the n integers, then yes it is faster. If not, then no it is not faster, because you can't do it.
 
 
+
+## 7
+
+
+
+## 8.1
+
+
+## 8.2
+
+
+## 8.3
+
+
+## 9.1
+
+
+## 9.2
 
 
 
