@@ -11,6 +11,10 @@ public class Stack {
 
     public static void main(String[] args) {
 
+        for (int a : array ) {
+            
+        }
+
         int number = 0;
         String input = null;
         Scanner scanner= new Scanner(System.in);
