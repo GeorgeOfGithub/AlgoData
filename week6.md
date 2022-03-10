@@ -47,6 +47,7 @@ You take each field as a vertice and each of the sides as an edge if there is a 
 
 ## 5.4
 we just use BFS to see if it is all connected and if there is a cyclic path. 
+BFS tells us if there are more than one shortest way to each vertice. This means that there must be a shortest way to each and every vertice. This is then checked after BFS has been done. O-notation for this is O(n+m)
 
 ## 7.1
 because if you have an uneven amount of edges in a vertice you have to visit the vertice for example twice if there are 3 edges, but then you have to leave through an edge already visited. You also have to go back to where you started so you cant just stop at a vertice with 3 edges. 
