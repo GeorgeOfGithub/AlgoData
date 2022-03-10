@@ -36,7 +36,7 @@ Der bruges breath-first fra begge sider for at sikre at det er den korteste vej,
 ## 5.1
 
 n = O(k^2)
-m = 2* k * (k-1)
+m = 2* k * (k+1) 
 m = O(k^2)
 
 ## 5.2
