@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -10,7 +12,7 @@ public class week7 {
     public static void main(String[] args) {
 
 
-        Queue q;
+
         Scanner scanner= new Scanner(System.in);
         int N = scanner.nextInt();
         int M = scanner.nextInt();
@@ -20,11 +22,11 @@ public class week7 {
         
 
 
-        for (int i=1; i<=N; i++) {
+        for (int i=0; i<N; i++) {
             adj[i] = new ArrayList<>();
         }
 
-        for (int i=0;i<=M;i++) {
+        for (int i=0;i<M;i++) {
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             adj[y-1].add(x-1);
@@ -32,33 +34,46 @@ public class week7 {
         }
         scanner.close();
 
-
-        for(int i =0; i<=N;i++) {
+        Queue<Integer> q = new LinkedList<Integer>();
+        for(int i =0; i<N;i++) {
             if(indegree[i] ==0) {
                 semester[i] =1;
                 q.add(i);
             }
         } 
+        
 
-        while(q.isEmpty() !=true) {
-            int a = (int) q.poll();
+        while(!q.isEmpty()) {
+            int a = q.remove();
+            System.out.println(a);
 
             for(int b = 0; b <= adj[a].size(); b++) {
                 indegree[b] --;
 
                 if(indegree[b] == 0){
                     semester[b] = semester[a]+1;
-                    q.poll();
+                    q.add(b);
                 }
 
             }
         }
-        System.out.println(Arrays.);
+        System.out.println(maxValue(semester));
 
 
         
 
 
+    }
+
+    public static int maxValue(int array[]){
+        int max = Arrays.stream(array).max().getAsInt();
+        return max;
+      }
+
+    public static void print(int array[]) {
+        for(int a : array) {
+            System.out.println(array[a]);
+        }
     }
 
     
