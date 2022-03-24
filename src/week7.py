@@ -43,9 +43,10 @@ n = int(input())
 
 h = Heap(n)
 
+# if loop variable is not used then just use _ instead of a chosen int or whatever
 for _ in range(n):
     inp = input().split()
     if inp[0] == "N":
-        h.insert((inp[2],inp[1]))
+        h.insert((int(inp[2]),int(inp[1])))
     else:
         print(h.extract_max()[1])
