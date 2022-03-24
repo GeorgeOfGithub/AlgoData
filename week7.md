@@ -1,52 +1,58 @@
-## 1.1 
-A[0] -> A[5,3,2]
+## 1.1
+a, b, not c
 
 ## 1.2
-BFS in a
-Mark 4, queue 0,6,1. Mark 0, queue 5,3,2. Mark 6. Mark 1. Mark 5. Mark 3. Mark 2
-DFS
-Mark 5, mark 9, mark 4, mark 0, mark 3, mark 1, mark 7, mark 6, mark 2
+A, not B, not C
 
 ## 1.3
-A is DAG, C is not dag as 9->4->0->5
+21, 11
 
 ## 1.4
-a has no strongly connected components. in c: 4 and 0 are strongly connected and 5->7->6->2->0->5 are strongly connected.
+Yes, if first place has been removed
 
 ## 1.5
-it has 2. 0->1->2->5 and 0->3->4->5
+on the lowest row, not necesarrily on the most left or right
 
 ## 1.6
-none, because that is automatically a cycle if you can go 2 ways.
+because we use bubbleup and bubbledown after each of the operations heap order is maintained
 
+## 1.7
+We insert the lowest from every array and put them into a heap, this takes log(k) time. then we extractmax and insert from the array that lost an element and do that n times. Therefore it is 
+O(n * log(k))
+
+We use a heap
 ## 2.1
-Just imagine it as a graph with edges that are directed and most that are not directed, and then just use breath-first as that finds the fastes way through the snakes and ladder. This must also be the way with the fewest rounds.
+extractmax m times so extractmax takes log n time. 
 
-## 3.1
-![alt text for screen readers](week7.png "Directed graphs").
-No because for example here it would go wrong in the left graph as it would put 3 before 4 and that would be wrongly sorted
+## 2.2
+Just remove the element and then use bubble down like in extract max. this will take log(n) time
 
-## 3.2
-Check the ordering with a search if any vertices point to a vertice already marked.
+We delete twice for x and y and add their keys together and insert z with that key this is 3 times log(n), therefore 3*log(n) and therefore O(log(n))
 
-## 3.3
-No because if there is a DAG then it automatically means it has a topological sorting.
-
-## 3.4
+## 2.3
 
 
-## 5
-Lav personerne til grafer ved at modellere deres fødsel og død som vertices. Lav kanter hvis en begivenhed skete før noget andet. Så hav kant fra fødsel til død. 
-
-## 6
-Because if G is DAG then it means that G can be placed so that the first vertice can be removed which is basically how a topological ordering works. If G is DAG then this must be true and therefore it must have a topological ordering.
+## 2.4
 
 
-## 7.1
-Vi hælder over i f5 en gang og så fra f5 over i f3. Så hælder vi fra f3 over i f8 og fra f5 til f3. Der er nu 2 i f3 og 6 i f8. Så hælder vi over i f5 og derfra over i f3. Der er nu 4 i f5.
+## 3
+So each element in the heap has an extra part besides the index it is sorted after, this part has the sattelite data stored and can be accessed via the element. 
+
+## 4.1
+first row has 1 element, second row has 2, third has 4, and so on. the height of the tree is the amount of row-1. Because each node has 2 lower than itself it is 2^h, then we have a level lower because the heigh has to stemme overens.
+
+## 4.2
+The sum goes asymptopically towards the amount of nodes when the fraction goes towards infinity. So the fraction you add with becomes smaller and smaller when the sum goes towards the amount of nodes n.
+
+## 5.1
 
 
-## 7.2
+
+
+
+
+
+
 
 
 

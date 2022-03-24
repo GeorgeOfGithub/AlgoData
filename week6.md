@@ -1,69 +1,64 @@
 ## 1.1 
-array 0[4,5,1]
-array 4[0,9,3]
+A[0] -> A[5,3,2]
 
 ## 1.2
-den kører bare hele vejen rundt
-tiden er 24
+BFS in a
+Mark 4, queue 0,6,1. Mark 0, queue 5,3,2. Mark 6. Mark 1. Mark 5. Mark 3. Mark 2
+DFS
+Mark 5, mark 9, mark 4, mark 0, mark 3, mark 1, mark 7, mark 6, mark 2
 
 ## 1.3
-først markerer den 0
-så 4,5 og 1
-så 3,9
-så 8,7
-så 6,2
-tiden er igen 24
+A is DAG, C is not dag as 9->4->0->5
 
 ## 1.4
-a connected components er alle sammen
-b er også alle
-
-c er 0,4,9,5 og 2,6,7,1,3 og 8
+a has no strongly connected components. in c: 4 and 0 are strongly connected and 5->7->6->2->0->5 are strongly connected.
 
 ## 1.5
-c er bipartite
+it has 2. 0->1->2->5 and 0->3->4->5
 
-## 2
-Man putter alle naboerne i en stack og så popper den øverste og går ned til den og smider dem i stacken og popper den øverste.
+## 1.6
+none, because that is automatically a cycle if you can go 2 ways.
 
-## 3
-Der bruges breath-first algo og så kører man for evigt igennem indtil man endten rammer den samme 2 gange eller kommer igennem alle lag.
-det vil så tage antal lag tid
+## 2.1
+Just imagine it as a graph with edges that are directed and most that are not directed, and then just use breath-first as that finds the fastes way through the snakes and ladder. This must also be the way with the fewest rounds.
 
-## 4
-Der bruges breath-first fra begge sider for at sikre at det er den korteste vej, breath first finder normalt den korteste vej
+## 3.1
+![alt text for screen readers](week7.png "Directed graphs").
+No because for example here it would go wrong in the left graph as it would put 3 before 4 and that would be wrongly sorted
 
-## 5.1
+## 3.2
+Check the ordering with a search if any vertices point to a vertice already marked.
 
-n = O(k^2)
-m = 2* k * (k+1) 
-m = O(k^2)
+## 3.3
+No because if there is a DAG then it automatically means it has a topological sorting.
 
-## 5.2
-You take each field as a vertice and each of the sides as an edge if there is a wall. In the end there is a graph with k^2 vertices and at most k^2+k^2 edges
-
-## 5.3
+## 3.4
 
 
-## 5.4
-we just use BFS to see if it is all connected and if there is a cyclic path. 
-BFS tells us if there are more than one shortest way to each vertice. This means that there must be a shortest way to each and every vertice. This is then checked after BFS has been done. O-notation for this is O(n+m)
+## 5
+Lav personerne til grafer ved at modellere deres fødsel og død som vertices. Lav kanter hvis en begivenhed skete før noget andet. Så hav kant fra fødsel til død. 
+
+## 6
+Because if G is DAG then it means that G can be placed so that the first vertice can be removed which is basically how a topological ordering works. If G is DAG then this must be true and therefore it must have a topological ordering.
+
 
 ## 7.1
-because if you have an uneven amount of edges in a vertice you have to visit the vertice for example twice if there are 3 edges, but then you have to leave through an edge already visited. You also have to go back to where you started so you cant just stop at a vertice with 3 edges. 
+Vi hælder over i f5 en gang og så fra f5 over i f3. Så hælder vi fra f3 over i f8 og fra f5 til f3. Der er nu 2 i f3 og 6 i f8. Så hælder vi over i f5 og derfra over i f3. Der er nu 4 i f5.
+
 
 ## 7.2
-because you dont have to stop at the one you started in you can add an extra edge at the start or end
 
-## 7.3
-1 is yes
-2 is no
-3 is no
 
-## 7.4
-breath first and if all vertices are met twice then it is true
 
-## 7.5
+
+
+
+
+
+
+
+
+
 
 
 

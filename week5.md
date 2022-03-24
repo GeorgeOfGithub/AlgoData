@@ -1,69 +1,69 @@
-## 1.1
-first we add 4, then add 1, then add 3, then remove 3, then add 8, then remove 8
+## 1.1 
+array 0[4,5,1]
+array 4[0,9,3]
+
 ## 1.2
-Just push them all
+den kører bare hele vejen rundt
+tiden er 24
 
 ## 1.3
-add 4, then add 1, then 3, then remove 4, then add 8, then remove 1
+først markerer den 0
+så 4,5 og 1
+så 3,9
+så 8,7
+så 6,2
+tiden er igen 24
 
 ## 1.4
-you make 2 stacks. when you want to dequeue from the stack you first pop everything from the first stack and add it in opposite order to the other stack. Now when you pop you remove it first to last instead of last to first. this is done until it is empty and then it is repeated every time you want to dequeue.
+a connected components er alle sammen
+b er også alle
+
+c er 0,4,9,5 og 2,6,7,1,3 og 8
+
+## 1.5
+c er bipartite
 
 ## 2
-number c
+Man putter alle naboerne i en stack og så popper den øverste og går ned til den og smider dem i stacken og popper den øverste.
 
-## 3.1
-first c is 0, then we go to the next link and add +1 to c, so c is 1. Then the next link and c is 2 and then the next link so c is 3. Then we go to the next last one and c is 4. Finally last link and c is 5 and x is now null.
+## 3
+Der bruges breath-first algo og så kører man for evigt igennem indtil man endten rammer den samme 2 gange eller kommer igennem alle lag.
+det vil så tage antal lag tid
 
-## 3.2
-Foo computes the number of links.
+## 4
+Der bruges breath-first fra begge sider for at sikre at det er den korteste vej, breath first finder normalt den korteste vej
 
+## 5.1
 
-## 3.3
-first x is 0 and s i added by 7. Then we go to the next link and s is +42 so it is 49. next link and s is +18 and therefore 67. next is 23 and therefore 90. then 95 and now the x is x.next, which is null and we end.
+n = O(k^2)
+m = 2* k * (k+1) 
+m = O(k^2)
 
-## 3.4
-bar adds all links together.
+## 5.2
+You take each field as a vertice and each of the sides as an edge if there is a wall. In the end there is a graph with k^2 vertices and at most k^2+k^2 edges
 
-
-## 4.1
-we go 2 places forward with x.next, so one link is basically removed.
-
-
-## 4.2
-t is added as the next element in the array.
-
-## 4.3
-now t is added after x, but t.next is t again and therefore it doesnt work, because t.next points to itself.
-
-## 6.1
-We go through each entity in the linked list and see if x is lower than the number and x.next is higher or equal to the number and if that is true then we say x.next is the new number and x.next.next is equal to the earlier x.next
-
-## 6.2
-If you are allowed to do x.next.next.next... until you are halfway through the n integers, then yes it is faster. If not, then no it is not faster, because you can't do it.
+## 5.3
 
 
+## 5.4
+we just use BFS to see if it is all connected and if there is a cyclic path. 
+BFS tells us if there are more than one shortest way to each vertice. This means that there must be a shortest way to each and every vertice. This is then checked after BFS has been done. O-notation for this is O(n+m)
 
-## 7
-So we have x.current and then we change x.prev and x.next around.
-https://www.geeksforgeeks.org/reverse-a-linked-list/ 
+## 7.1
+because if you have an uneven amount of edges in a vertice you have to visit the vertice for example twice if there are 3 edges, but then you have to leave through an edge already visited. You also have to go back to where you started so you cant just stop at a vertice with 3 edges. 
 
+## 7.2
+because you dont have to stop at the one you started in you can add an extra edge at the start or end
 
-## 8.1
-Yes, if every prisoner flicks a switch when they come into the room and the last prisoner can then see that every switch except one is flicked and therefore every prisoner has been in there. If a prisoner goes in twice he doesnt do anything.
+## 7.3
+1 is yes
+2 is no
+3 is no
 
-## 8.2
-It is like if it is bits instead. so we go from 0 to 32 in binary and when every switch is flicked on we are at 32.  If a prisoner goes in twice he doesnt do anything.
-2^5 = 32
+## 7.4
+breath first and if all vertices are met twice then it is true
 
-## 8.3
-Only one prisoner can turn on the light. Prisoners can only turn off the light once. So when a prisoner comes in twice he just leaves the light. when the turn on prisoner has turned on the light 32 times he knows every prisoner has been in there.
-
-
-## 9.1
-We create a new array from the last array and then put every part of the array except the the last or first one. 
-
-## 9.2
+## 7.5
 
 
 

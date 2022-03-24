@@ -1,98 +1,69 @@
-## 1
-2^n, n^3, n^2, n, n*log n, sqrt(n)
+## 1.1
+first we add 4, then add 1, then add 3, then remove 3, then add 8, then remove 8
+## 1.2
+Just push them all
+
+## 1.3
+add 4, then add 1, then 3, then remove 4, then add 8, then remove 1
+
+## 1.4
+you make 2 stacks. when you want to dequeue from the stack you first pop everything from the first stack and add it in opposite order to the other stack. Now when you pop you remove it first to last instead of last to first. this is done until it is empty and then it is repeated every time you want to dequeue.
+
 ## 2
-n^3
-2^n
-n*sqrt(n)
-n
-sqrt(n)
-n
-2^n
-n^3 * log(n)
-n^2
-n^3 log(n)
+number c
 
-## 3
-log2 n = O(log n)
-log5 n = O(log n)
-n*log2 n = O(n log n)
+## 3.1
+first c is 0, then we go to the next link and add +1 to c, so c is 1. Then the next link and c is 2 and then the next link so c is 3. Then we go to the next last one and c is 4. Finally last link and c is 5 and x is now null.
+
+## 3.2
+Foo computes the number of links.
 
 
-## 4
-no
-yes
-no
-no
-yes
-yes
-yes
-yes
-no
-no
+## 3.3
+first x is 0 and s i added by 7. Then we go to the next link and s is +42 so it is 49. next link and s is +18 and therefore 67. next is 23 and therefore 90. then 95 and now the x is x.next, which is null and we end.
+
+## 3.4
+bar adds all links together.
 
 
+## 4.1
+we go 2 places forward with x.next, so one link is basically removed.
 
-## 5.1
-2^3 = 8 gange langsommere
 
-## 5.2
-5+15=20
-20+25=45
-45+35=80
-80+45=125
-125+55=180
+## 4.2
+t is added as the next element in the array.
 
-n^2/200000=O(n^2)
-
-## 5.3
-3*log2(n)
+## 4.3
+now t is added after x, but t.next is t again and therefore it doesnt work, because t.next points to itself.
 
 ## 6.1
-Fordi de begge er non-negative betyder det at de begge er theta-notation. Når man så kigger på den største af dem betyder det så at man igen kigger på theta af dem.
+We go through each entity in the linked list and see if x is lower than the number and x.next is higher or equal to the number and if that is true then we say x.next is the new number and x.next.next is equal to the earlier x.next
 
 ## 6.2
-Fordi O-notation er det størst mulige tid som man bruger kan man ikke sige at det skal være mindst det længste tid. Det ville være mere rigtigt at sige "at most"
+If you are allowed to do x.next.next.next... until you are halfway through the n integers, then yes it is faster. If not, then no it is not faster, because you can't do it.
 
-## 6.3
-2^n+1 = O(2^n) true
-2^2n = O(2^2n) false
 
-## 6.4
-log(x!) er mindre end x log(x) og dermed passer O-notationen
 
-## 6.5
-hvis man ganger med en konstant bliver den mindre end log(x!) dermed passer theta-notation
+## 7
+So we have x.current and then we change x.prev and x.next around.
+https://www.geeksforgeeks.org/reverse-a-linked-list/ 
 
-![6.5] (week 3.png)
-
-## 7.1 
-fordi de allerede er blevet sorteret betyder det at man bare skal køre to merges ved hver arrayplacering. derfor er det 2*n som så bliver til O(n)
-
-## 7.2
-3-merge vil have samme O notation som 2 merge. den eneste forskel vil være at det er log3 (n) og ikke log2 (n) og når dette skrives ind i o-notation bliver det bare log (n)
-
-## 7.3
-det vil ikke være bedre at bruge et k-merge end et 2-merge da log kun ændrer sig og dette betyder ikke noget for o-notation.
 
 ## 8.1
-Man sorterer først arrayet med merge sort og så lægger alle sammen som er efter den sidste negative værdi og dermed lægger man alle positive sammen og dermed får man maximal
+Yes, if every prisoner flicks a switch when they come into the room and the last prisoner can then see that every switch except one is flicked and therefore every prisoner has been in there. If a prisoner goes in twice he doesnt do anything.
 
 ## 8.2
--II-
+It is like if it is bits instead. so we go from 0 to 32 in binary and when every switch is flicked on we are at 32.  If a prisoner goes in twice he doesnt do anything.
+2^5 = 32
 
 ## 8.3
+Only one prisoner can turn on the light. Prisoners can only turn off the light once. So when a prisoner comes in twice he just leaves the light. when the turn on prisoner has turned on the light 32 times he knows every prisoner has been in there.
 
 
+## 9.1
+We create a new array from the last array and then put every part of the array except the the last or first one. 
 
-
-
-
-
-
-
-
-
-
+## 9.2
 
 
 
