@@ -30,10 +30,10 @@ Just remove the element and then use bubble down like in extract max. this will 
 We delete twice for x and y and add their keys together and insert z with that key this is 3 times log(n), therefore 3*log(n) and therefore O(log(n))
 
 ## 2.3
-
+So we look at the largest and then look at the children and see if they are larger than the one we want to find.
 
 ## 2.4
-
+We create 2 heaps, one max heap and one min heap, so we can either remove the largest or lowest with almost the same operations. This will just take 2*log(n) time which is log(n) time asymptotically.
 
 ## 3
 So each element in the heap has an extra part besides the index it is sorted after, this part has the sattelite data stored and can be accessed via the element. 
