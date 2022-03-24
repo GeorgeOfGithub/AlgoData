@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import javax.management.Query;
 
-public class week7 {
+public class week6 {
 
 
     public static void main(String[] args) {

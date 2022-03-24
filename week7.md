@@ -48,8 +48,15 @@ The sum goes asymptopically towards the amount of nodes when the fraction goes t
 
 
 
+## 6.1
+2D array that computes the sum of a square by rows. so first place sums the first row, and the left-most sums the whole array
 
+## 6.2
+We create 2 arrays, one with the array and one that computes the sum of the integers up to this location of the array. 
 
+## 6.3
+Create a binary tree with the lowest children being built up of the array and the sum creating the parents. 
+to get the sum we go from the top and go down, if you go left you just go straigth down. if you go right you add the elements that come to the left. 
 
 
 
