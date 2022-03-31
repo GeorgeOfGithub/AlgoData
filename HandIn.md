@@ -16,3 +16,11 @@ state means just state, no proof
 1.3 use BFS and see if mushroom has been marked and find shortest route, also do this from mushroom to end-point.
 
 BFS starts at the start-point and afterwards at the mushroom.
+
+1.1 
+O(k^2)
+
+1+2+3+4+5...n så giver det n^2
+n/2+n/3+n/4+n/5.. n/n så giver det også n^2
+
+
