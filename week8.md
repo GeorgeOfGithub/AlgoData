@@ -56,14 +56,21 @@ union(0,1)
 union(1,2)
 union(2,3)
 osv.
-så kommer det bare til at være en lang linje ned
+så man sætter den med et ovenover den med mange i
+
 
 ## 1.6
 Man kan ikke komme langt ned, da det højeste er log2 n, så det bedste er at bygge 1 af den største man kan som maks er 2 høj og så kombinere dem i en der er 3 høj.
 
 
 ## 1.7
-
+PathComp(x)
+    r=Find(x)
+    while(p[x] != r)
+        tmp = p[x]
+        p[x] = r
+        x=tmp
+først finder man roden og så gør man sådan at alle noder har roden som parent på vej ned til den man skal finde. 
 
 
 ## 2
@@ -76,4 +83,36 @@ Den passer over for hvad der står på slide 7 union find.
 
 ## 3
 Brug DFS på den ene man gerne vil se om den sidder sammen og ser om den markerer den anden man gerne vil finde. Dette tager lang tid i forhold til union find. 
+
+## 4
+
+
+## 5
+
+
+## 6
+PathComp(x)
+
+Man skal ændre i find så den bliver rekursiv
+
+
+## 7.1
+Init(n) bygger man den op hvor den peget mod den lige efter og så peger mod root
+Fordi representive er den første i listen går man bare ned i den for find og det tager så O(1) tid
+For union skal alle dele i det andet set sættes til at have root for den anden og derfor skal man gå igennem hele settet
+
+## 7.2
+Man laver en double-linked list hvor roden også peger mod alle delene i settet. Dermed kan man tælle hvem der har flest og sætte den til at være den som er den nye rod og det tager så min() af de to set.
+
+## 7.3
+
+
+
+
+
+
+
+
+
+
 
