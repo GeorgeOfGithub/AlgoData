@@ -79,13 +79,15 @@ if Find(i)!=Find(j) then
     for ( k=0; k=n-1; k++)
         if (id[k] == id [i])
             id[k] = id[j]
-Den passer over for hvad der står på slide 7 union find. 
+Den passer ikke fordi når vi går igennem forloopet opdateres den og dermed opdatere vi kun den første i listen.  
 
 ## 3
 Brug DFS på den ene man gerne vil se om den sidder sammen og ser om den markerer den anden man gerne vil finde. Dette tager lang tid i forhold til union find. 
 
 ## 4
 
+## 4.1
+we see if their ID are the same and when computers are connected then their ID is the same. 
 
 ## 5
 
