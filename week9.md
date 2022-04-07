@@ -11,8 +11,10 @@ de minder om hinanden, den eneste forskel er om man tager 0->5 eller 1->2
 primms og kruskals er begge to effektive til at finde minimum spanning tree
 
 ## 3.1
-3->7, 1->5, 8->7, 0->5, 4->5, Nu kan man ikke fjerne flere.
+3->7, 1->5, 8->7, 0->5, 4->5, 4-6, Nu kan man ikke fjerne flere.
 
+## 3.2
+den fjerner alle de tungeste som kan fjernes og derfor har man alle de laveste edges kun og dermed har man MST
 
 ## 4.1
 Fordi man skal forbinde 2 vertices og det skal være den laveste betyder det at den automatisk bliver sat ind i MST. Fordi du rammer alle noder rammer du alle edges og dermed rammer man altid den laveste og forbinder sig til den. Hvis de alle har samme vægt kan man ramme den tungeste ellers er det ikke muligt at forbinde sig til den tungeste. 
