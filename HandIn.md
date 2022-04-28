@@ -24,3 +24,12 @@ O(k^2)
 n/2+n/3+n/4+n/5.. n/n så giver det også n^2
 
 
+Handin 3
+1.1
+
+1.2
+
+1.3
+
+
+1.4
