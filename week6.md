@@ -1,3 +1,12 @@
+Når man laver BFS og DFS tager man størst til mindst i stacks og queues
+
+Begreber angående træer
+Degree: Antallet af naboer til en node
+Indegree og outdegree er pilen peger ind og ud
+Depth er antallet af noder uden roden.
+Height er for en vertice hvor langt der er ned til et leaf. Height for et tree er lig root.
+Diameter er længste vej mellem to noder.
+
 ## 1.1 
 A[0] -> A[5,3,2]
 
