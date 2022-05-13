@@ -33,15 +33,19 @@ Den skal sorteres og dernæst kører man igennem array og kigger på naboer
 ## 4
 
 ## 5.1
-Den skal sorteres og dernæst kører man igennem array og kigger fra begge ender og ser hvad der sker når de lægges sammen
+Man kigger på hver sum 1 efter 1 og ser om et af alle de andre tal plusset på det bestemte tal giver 0
 
 ## 5.2
-Sorterer først og leder derefter med binary search. det tager 2*n log(n)
+At sortere noget tager n*log(n) tid
+Man kigger på et tal og så laver binary search efter det tal som man skal finde.
 
 ## 5.3
+Man kigger på hvert tal og leder nu igennem alle de andre tal og kigger efter 2 tal som giver 0 tilsammen med de andre
 
 ## 5.4
+Samme koncept som 5.2, Sorteret array og så kigger man efter A[i] og A[j] og så ved man hvad A[k] som man leder efter skal være
 
 ## 5.5
+Find et tal og så find en 2-sum ved at kigge fra start og slut og gående imod midten og kigge efter en 2-sum. 
 
 ## 6.1

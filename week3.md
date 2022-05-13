@@ -1,3 +1,9 @@
+O(n) er det højeste værdi
+
+theta(n) er den midterste værdi, så ved fx theta(n) af 4*n er rigtigt fordi man kan tage 5*n som højere og 3*n som lavere.
+
+Omega(n) er det laveste værdi
+
 ## 1
 2^n, n^3, n^2, n, n*log n, sqrt(n)
 ## 2
