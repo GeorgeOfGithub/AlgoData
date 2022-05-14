@@ -24,11 +24,30 @@ class Union:
 N, M = [int(i) for i in input().split()]
 
 
-u = Union(N)
+u = Union(N+1)
+
+sum = 0
+edges = []
 
 for _ in range(M):
-    inp = input().split()
-    if inp[0] == "A":
-        u.union(int(inp[1]),int(inp[2]))
-    else:
-        print("YES" if u.is_connected(int(inp[1]),int(inp[2])) else "NO")
+    bj,bi,price = [int(i) for i in input().split()]
+    edges.append((price,bj,bi))
+
+
+edges.sort()
+
+added = 0
+i = 0
+
+for edge in edges:
+    price,bj,bi = edge
+    if not u.is_connected(bi,bj):
+        added += 1
+        sum += price
+        u.union(bj,bi)
+        if added == N -1:
+            break
+
+print(sum)
+
+

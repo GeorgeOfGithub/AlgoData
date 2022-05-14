@@ -60,5 +60,22 @@ print(duplicates)
 
 #     h[inp] = value +1
 
+# virker måske
+# hasht = dict()
+
+# N = int(input())
+
+# duplicates = 0
+# for _ in range(N):
+#     id = input()
+#     if id in hasht:
+#         if hasht[id] == 1:
+#             duplicates += 1
+#             hasht[id] = 2
+
+#     print(duplicates)
+
+
+
 
 
