@@ -25,10 +25,10 @@ for i in range(1,N):
     else:
         blist[int(line[0])].right = blist[i]
 
-def pre_order(x):
-    if x is None:
+def pre_order(root):
+    if root is None:
         return ""
-    s = " " + str(x.key)
-    return s + pre_order(x.left) + pre_order(x.right)
+    s = " " + str(root.key)
+    return s + pre_order(root.left) + pre_order(root.right)
 
 print(pre_order(blist[0]))
