@@ -1,3 +1,5 @@
+Kruskalls, her laver man streger ud fra vægten af hvert vertice, uden at man laver en cycle indtil alle er forbundet
+
 ## 1.1
 5->6, 6->7, 7-> 2->4, 2->3, 2->1, 1->0, 3->8
 
