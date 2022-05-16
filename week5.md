@@ -1,3 +1,5 @@
+Topological sort er at man placere edges mellem to vertices således at alle directed edges går fra venstre mod højre
+
 ## 1.1 
 array 0[4,5,1]
 array 4[0,9,3]

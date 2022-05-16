@@ -4,13 +4,15 @@ N = int(input())
 
 size = N*N
 
-adjacency = [[] for _ in range(size)]
+
 distance = [0 for _ in range(size)]
 visited = [False for _ in range(size)]
 maze = ""
 
 
 # Dette laver en adjacency liste
+adjacency = [[] for _ in range(size)]
+# tager input fra codejudge og bygger adjancencies
 for i in range(N):
     inp = input()
     maze += inp
