@@ -20,4 +20,14 @@ never use psuedo-code unless stated
 
 dont argue for correct algorithm
 
+Max value i datasæt på n værdier og finder de k største værdier
+singly-linked list er O(k*n)
+unsorted array er O(k*n)
+sorted array er O(k)
+Max heap er O(k*log n)
+binary search tree er O(n)
+
+
+
+
 
